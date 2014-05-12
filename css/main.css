@@ -1,0 +1,588 @@
+@import url(normalize.css);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Romanesco);
+/* line 15, main.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* line 40, main.scss */
+.page_container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* line 45, main.scss */
+nav {
+  width: 100%;
+  height: 95px;
+  background: #363635;
+  border-bottom: 0.7em solid white;
+  z-index: 5;
+  position: relative;
+}
+/* line 53, main.scss */
+nav .nav {
+  padding: 10px 0 0;
+  margin: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 400;
+  border: none;
+}
+@media (max-width: 960px) {
+  /* line 53, main.scss */
+  nav .nav {
+    font-size: 15px;
+  }
+}
+@media (max-width: 640px) {
+  /* line 53, main.scss */
+  nav .nav {
+    font-size: 13px;
+  }
+}
+/* line 70, main.scss */
+nav .nav-tabs {
+  text-decoration: none;
+}
+/* line 73, main.scss */
+nav .nav-tabs a {
+  color: white;
+}
+/* line 76, main.scss */
+nav .nav-tabs a:hover {
+  background-color: transparent;
+  border-bottom: none;
+}
+@media (max-width: 960px) {
+  /* line 45, main.scss */
+  nav {
+    height: 80px;
+  }
+}
+@media (max-width: 640px) {
+  /* line 45, main.scss */
+  nav {
+    height: 65px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 45, main.scss */
+  nav {
+    height: 50px;
+  }
+}
+
+/* line 98, main.scss */
+#nav_wrapper {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+
+/* line 107, main.scss */
+#logo_nav_wrapper #logo_wrapper {
+  width: 170px;
+  padding-top: 1%;
+  z-index: 5;
+}
+@media (max-width: 960px) {
+  /* line 107, main.scss */
+  #logo_nav_wrapper #logo_wrapper {
+    width: 140px;
+  }
+}
+@media (max-width: 640px) {
+  /* line 107, main.scss */
+  #logo_nav_wrapper #logo_wrapper {
+    width: 110px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 107, main.scss */
+  #logo_nav_wrapper #logo_wrapper {
+    display: none;
+  }
+}
+/* line 126, main.scss */
+#logo_nav_wrapper ul {
+  padding: 0 10px;
+}
+/* line 129, main.scss */
+#logo_nav_wrapper ul li {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 30px;
+  margin-left: 15px;
+}
+/* line 135, main.scss */
+#logo_nav_wrapper ul li a:hover {
+  text-decoration: none;
+}
+/* line 143, main.scss */
+#logo_nav_wrapper .cl-effect-15 a {
+  color: rgba(211, 211, 211, 0.3);
+  text-shadow: none;
+}
+/* line 148, main.scss */
+#logo_nav_wrapper .cl-effect-15 a::before {
+  color: #fff;
+  content: attr(data-hover);
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+/* line 158, main.scss */
+#logo_nav_wrapper .cl-effect-15 a:hover::before,
+#logo_nav_wrapper .cl-effect-15 a:focus::before {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0;
+}
+/* line 165, main.scss */
+#logo_nav_wrapper .logo_nav {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* line 174, main.scss */
+#number_wrapper {
+  background: white;
+  width: 17em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* line 181, main.scss */
+#number_wrapper i {
+  color: #363635;
+  display: inline-block;
+  font-size: 2em;
+  vertical-align: middle;
+  margin-left: .1em;
+}
+/* line 189, main.scss */
+#number_wrapper img {
+  display: inline-block;
+  width: 200px;
+}
+
+/* line 195, main.scss */
+.responsive {
+  width: 100%;
+}
+
+/* line 199, main.scss */
+#carousel_wrapper {
+  background: url("../img/landing_img2.jpg") no-repeat left top;
+  background-size: cover;
+  width: 100%;
+  height: 36em;
+  position: relative;
+  top: -40px;
+  left: 0;
+}
+
+/* line 209, main.scss */
+#home_wrapper {
+  position: relative;
+  padding-top: 4em;
+}
+
+/* line 214, main.scss */
+#home_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .7;
+}
+
+/* line 222, main.scss */
+#header_wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* line 227, main.scss */
+#featured_homes {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 2.5em;
+  font-weight: normal;
+  padding: 12% 0;
+  color: white;
+  text-align: center;
+  float: left;
+}
+/* line 237, main.scss */
+#featured_homes #header_copy {
+  padding: 1%;
+}
+/* line 241, main.scss */
+#featured_homes #partner {
+  font-size: 2em;
+}
+/* line 245, main.scss */
+#featured_homes #real_estate {
+  font-size: 1.2em;
+}
+/* line 249, main.scss */
+#featured_homes span {
+  color: white;
+}
+/* line 253, main.scss */
+#featured_homes #cta_findhome {
+  border: 2px solid #8c4646;
+  border-radius: 5px;
+  width: 85%;
+  margin: 3% auto;
+  font-size: 32px;
+}
+/* line 260, main.scss */
+#featured_homes #cta_findhome a:hover {
+  text-decoration: none;
+}
+/* line 264, main.scss */
+#featured_homes #cta_findhome:hover {
+  background: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+/* line 269, main.scss */
+#featured_homes #cta_findhome:hover span {
+  color: #8c4646;
+}
+/* line 275, main.scss */
+#featured_homes #cta_findhome .glyphicon-play {
+  font-size: 28px;
+}
+@media screen and (max-width: 1024px) {
+  /* line 275, main.scss */
+  #featured_homes #cta_findhome .glyphicon-play {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 950px) {
+  /* line 275, main.scss */
+  #featured_homes #cta_findhome .glyphicon-play {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 275, main.scss */
+  #featured_homes #cta_findhome .glyphicon-play {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 275, main.scss */
+  #featured_homes #cta_findhome .glyphicon-play {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 253, main.scss */
+  #featured_homes #cta_findhome {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 950px) {
+  /* line 253, main.scss */
+  #featured_homes #cta_findhome {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 253, main.scss */
+  #featured_homes #cta_findhome {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 253, main.scss */
+  #featured_homes #cta_findhome {
+    font-size: 10px;
+  }
+}
+
+/* line 315, main.scss */
+#headshot_wrapper {
+  width: 37%;
+  float: right;
+  padding-top: 12%;
+  opacity: .9;
+}
+
+/* line 322, main.scss */
+.header_class {
+  vertical-align: middle;
+}
+
+/* line 326, main.scss */
+#form_wrapper {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px -4px 20px -1px #888888;
+}
+/* line 330, main.scss */
+#form_wrapper #form_content {
+  height: 6em;
+}
+/* line 333, main.scss */
+#form_wrapper #form_content .form_wrapper {
+  position: relative;
+}
+/* line 336, main.scss */
+#form_wrapper #form_content .form_wrapper input {
+  margin: 2% 2.3% 0 0;
+  width: 24.5%;
+  font-size: 2em;
+  padding-left: .5%;
+}
+/* line 342, main.scss */
+#form_wrapper #form_content .form_wrapper input[type=submit] {
+  width: 170px;
+  margin-right: -4px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: #f15d58;
+  color: white;
+  font-size: 1.9em;
+  padding-left: 0;
+}
+
+/* line 361, main.scss */
+#info_wrapper {
+  width: 100%;
+  background: #8c4646;
+  padding: 3% 0;
+  position: relative;
+  top: -40px;
+  box-shadow: 0px -4px 20px -1px #888888;
+}
+
+/* line 371, main.scss */
+.info_boxes {
+  vertical-align: top;
+  color: white;
+  font-weight: 100;
+}
+/* line 376, main.scss */
+.info_boxes h3 {
+  border-top: 2px solid white;
+  padding: 5% 0;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* line 390, main.scss */
+#testimonials_wrapper {
+  width: 100%;
+  background: white;
+  font-family: "Romanesco", cursive;
+  position: relative;
+}
+/* line 396, main.scss */
+#testimonials_wrapper span {
+  color: #b8ab86;
+  font-size: 3em;
+}
+/* line 401, main.scss */
+#testimonials_wrapper #typewriter {
+  color: #b8ab86;
+  font-size: 3em;
+  text-align: left;
+  padding-top: 2%;
+}
+/* line 408, main.scss */
+#testimonials_wrapper .testies {
+  vertical-align: top;
+}
+/* line 412, main.scss */
+#testimonials_wrapper li {
+  color: #b8ab86;
+  font-size: 3em;
+  text-align: center;
+}
+/* line 418, main.scss */
+#testimonials_wrapper .flexslider {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+/* line 425, main.scss */
+#testimonials_wrapper .slides {
+  width: 85%;
+  margin: 0 auto;
+}
+/* line 430, main.scss */
+#testimonials_wrapper .flex-control-nav {
+  display: none;
+}
+
+/* line 436, main.scss */
+#logos_wrapper {
+  height: 22em;
+  width: 100%;
+  background: gray;
+  color: white;
+  position: relative;
+  padding-bottom: 1em;
+}
+/* line 444, main.scss */
+#logos_wrapper h3 {
+  padding: 5% 0;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0;
+}
+/* line 451, main.scss */
+#logos_wrapper img {
+  width: 22em;
+}
+
+/* line 457, main.scss */
+#footer {
+  width: 100%;
+  background: #363635;
+  height: 3em;
+  color: white;
+}
+/* line 463, main.scss */
+#footer #legal_copy {
+  font-size: 1em;
+  text-align: right;
+  padding-top: .9%;
+}
+
+/* line 470, main.scss */
+#idx_header {
+  background: #8c4646;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  padding: 4% 0;
+  text-align: center;
+}
+/* line 478, main.scss */
+#idx_header #shine_thing {
+  margin: auto;
+  width: 100%;
+  display: table;
+  height: auto;
+  color: #fcfcfc;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 491, main.scss */
+#idx_wrapper {
+  overflow: hidden;
+}
+
+/* line 495, main.scss */
+#contactpage_container {
+  width: 100%;
+  background: lightgrey;
+}
+
+/* line 500, main.scss */
+#map {
+  width: 100%;
+  height: 25em;
+}
+
+/* line 505, main.scss */
+#contact_form_wrapper {
+  height: 100%;
+  padding: 2.5% 0;
+  background: lightgrey;
+}
+/* line 510, main.scss */
+#contact_form_wrapper input, #contact_form_wrapper textarea, #contact_form_wrapper select {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 1.4em;
+  padding: 5px 10px;
+  color: #363635;
+  display: block;
+  width: 100%;
+  background: transparent;
+}
+/* line 521, main.scss */
+#contact_form_wrapper input, #contact_form_wrapper textarea {
+  border: 3px solid #fff;
+}
+/* line 525, main.scss */
+#contact_form_wrapper textarea {
+  min-height: 200px;
+}
+/* line 529, main.scss */
+#contact_form_wrapper ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #363635;
+  font-style: italic;
+}
+/* line 534, main.scss */
+#contact_form_wrapper :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #363635;
+  font-style: italic;
+}
+/* line 539, main.scss */
+#contact_form_wrapper ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #363635;
+  font-style: italic;
+}
+/* line 544, main.scss */
+#contact_form_wrapper :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #363635;
+  font-style: italic;
+}
+/* line 549, main.scss */
+#contact_form_wrapper #contact_submit {
+  background: #83bf17;
+  border: none;
+  color: #fff;
+  width: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+/* line 562, main.scss */
+#contact_form_wrapper #contact_submit:hover {
+  background: #8c4646;
+}
+@media screen and (max-width: 70em) {
+  /* line 568, main.scss */
+  #contact_form_wrapper .cbp-mc-column {
+    width: 50%;
+  }
+  /* line 571, main.scss */
+  #contact_form_wrapper .cbp-mc-column:nth-child(3) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 48em) {
+  /* line 577, main.scss */
+  #contact_form_wrapper .cbp-mc-column {
+    width: 100%;
+    padding: 10px;
+  }
+}
